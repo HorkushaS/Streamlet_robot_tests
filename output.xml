@@ -1,114 +1,113 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.10.6 on win32)" generated="20220907 02:18:53.034" rpa="false" schemaversion="3">
+<robot generator="Robot 5.0.1 (Python 3.10.6 on win32)" generated="20220907 08:16:42.698" rpa="false" schemaversion="3">
 <suite id="s1" name="Streamlet robot tests" source="C:\Users\Станислав\Documents\GitHub\Streamlet_robot_tests">
 <suite id="s1-s1" name="Smoke Test" source="C:\Users\Станислав\Documents\GitHub\Streamlet_robot_tests\smoke_test.robot">
-<test id="s1-s1-t1" name="Profile preferances" line="42">
+<test id="s1-s1-t1" name="Profile preferances" line="43">
 <kw name="Open Sign in page">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${SIGNIN URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220907 02:18:53.194" level="INFO">Opening browser 'Chrome' to base url 'https://dev.streamlet.tk/sign-in'.</msg>
-<status status="PASS" starttime="20220907 02:18:53.194" endtime="20220907 02:18:55.508"/>
+<msg timestamp="20220907 08:16:42.860" level="INFO">Opening browser 'Chrome' to base url 'https://dev.streamlet.tk/sign-in'.</msg>
+<status status="PASS" starttime="20220907 08:16:42.859" endtime="20220907 08:16:45.177"/>
 </kw>
 <kw name="Wait Until Element Contains" library="SeleniumLibrary">
 <arg>${AUHEADER}</arg>
 <arg>Sign in</arg>
 <doc>Waits until the element ``locator`` contains ``text``.</doc>
-<status status="PASS" starttime="20220907 02:18:55.508" endtime="20220907 02:18:55.532"/>
+<status status="PASS" starttime="20220907 08:16:45.177" endtime="20220907 08:16:45.195"/>
 </kw>
-<status status="PASS" starttime="20220907 02:18:53.194" endtime="20220907 02:18:55.532"/>
+<status status="PASS" starttime="20220907 08:16:42.859" endtime="20220907 08:16:45.195"/>
 </kw>
 <kw name="Type in email">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${EMAILXP}</arg>
-<arg>mytest2@mailsac.com</arg>
+<arg>mytest3@mailsac.com</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220907 02:18:55.533" level="INFO">Typing text 'mytest2@mailsac.com' into text field 'xpath=//*[@type='email']'.</msg>
-<status status="PASS" starttime="20220907 02:18:55.533" endtime="20220907 02:18:55.608"/>
+<msg timestamp="20220907 08:16:45.195" level="INFO">Typing text 'mytest3@mailsac.com' into text field 'xpath=//*[@type='email']'.</msg>
+<status status="PASS" starttime="20220907 08:16:45.195" endtime="20220907 08:16:45.271"/>
 </kw>
-<status status="PASS" starttime="20220907 02:18:55.532" endtime="20220907 02:18:55.609"/>
+<status status="PASS" starttime="20220907 08:16:45.195" endtime="20220907 08:16:45.271"/>
 </kw>
 <kw name="Type in password">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${PASSWORDXP}</arg>
 <arg>12341234</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220907 02:18:55.609" level="INFO">Typing text '12341234' into text field 'xpath=//*[@type='password']'.</msg>
-<status status="PASS" starttime="20220907 02:18:55.609" endtime="20220907 02:18:55.673"/>
+<msg timestamp="20220907 08:16:45.272" level="INFO">Typing text '12341234' into text field 'xpath=//*[@type='password']'.</msg>
+<status status="PASS" starttime="20220907 08:16:45.272" endtime="20220907 08:16:45.337"/>
 </kw>
-<status status="PASS" starttime="20220907 02:18:55.609" endtime="20220907 02:18:55.673"/>
+<status status="PASS" starttime="20220907 08:16:45.272" endtime="20220907 08:16:45.337"/>
 </kw>
 <kw name="Click on the Sign in button">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${SIGNINAUXP}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220907 02:18:55.674" level="INFO">Clicking element 'xpath=//*[@type='submit']'.</msg>
-<status status="PASS" starttime="20220907 02:18:55.674" endtime="20220907 02:18:55.713"/>
+<msg timestamp="20220907 08:16:45.337" level="INFO">Clicking element 'xpath=//*[@type='submit']'.</msg>
+<status status="PASS" starttime="20220907 08:16:45.337" endtime="20220907 08:16:45.376"/>
 </kw>
-<status status="PASS" starttime="20220907 02:18:55.673" endtime="20220907 02:18:55.713"/>
+<status status="PASS" starttime="20220907 08:16:45.337" endtime="20220907 08:16:45.377"/>
 </kw>
 <kw name="Click user profile settings">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${USERDDMENUXP}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220907 02:18:55.713" endtime="20220907 02:18:56.145"/>
+<status status="PASS" starttime="20220907 08:16:45.377" endtime="20220907 08:16:45.843"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${USERDDMENUXP}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220907 02:18:56.145" level="INFO">Clicking element 'xpath=//*/header/div[2]/button[2]'.</msg>
-<status status="PASS" starttime="20220907 02:18:56.145" endtime="20220907 02:18:56.179"/>
+<msg timestamp="20220907 08:16:45.844" level="INFO">Clicking element 'xpath=//*/header/div[2]/button[2]'.</msg>
+<status status="PASS" starttime="20220907 08:16:45.843" endtime="20220907 08:16:45.870"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${PROFILESETTINGSXP}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220907 02:18:56.179" endtime="20220907 02:18:56.195"/>
+<status status="PASS" starttime="20220907 08:16:45.871" endtime="20220907 08:16:45.888"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${PROFILESETTINGSXP}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220907 02:18:56.196" level="INFO">Clicking element 'xpath=//*/div[2]/ul/li[1]'.</msg>
-<status status="PASS" starttime="20220907 02:18:56.195" endtime="20220907 02:18:56.225"/>
+<msg timestamp="20220907 08:16:45.888" level="INFO">Clicking element 'xpath=//*/div[2]/ul/li[1]'.</msg>
+<status status="PASS" starttime="20220907 08:16:45.888" endtime="20220907 08:16:45.922"/>
 </kw>
-<status status="PASS" starttime="20220907 02:18:55.713" endtime="20220907 02:18:56.225"/>
+<status status="PASS" starttime="20220907 08:16:45.377" endtime="20220907 08:16:45.923"/>
 </kw>
 <kw name="Assert profile settings">
 <kw name="Wait Until Element Contains" library="SeleniumLibrary">
-<arg>${PROFILESETTINGSXP}</arg>
-<arg>Profile settings</arg>
+<arg>${PROFILESETTINGS}</arg>
+<arg>Change your personal information</arg>
 <doc>Waits until the element ``locator`` contains ``text``.</doc>
-<msg timestamp="20220907 02:19:01.341" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20220907 02:19:01.341" level="FAIL">Element with locator 'xpath=//*/div[2]/ul/li[1]' not found.</msg>
-<status status="FAIL" starttime="20220907 02:18:56.226" endtime="20220907 02:19:01.342"/>
+<status status="PASS" starttime="20220907 08:16:45.923" endtime="20220907 08:16:46.154"/>
 </kw>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <arg>alert.png</arg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<status status="NOT RUN" starttime="20220907 02:19:01.342" endtime="20220907 02:19:01.342"/>
+<msg timestamp="20220907 08:16:46.231" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="alert.png"&gt;&lt;img src="alert.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220907 08:16:46.154" endtime="20220907 08:16:46.231"/>
 </kw>
-<status status="FAIL" starttime="20220907 02:18:56.225" endtime="20220907 02:19:01.343"/>
+<status status="PASS" starttime="20220907 08:16:45.923" endtime="20220907 08:16:46.231"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20220907 02:19:01.343" endtime="20220907 02:19:03.457"/>
+<status status="PASS" starttime="20220907 08:16:46.231" endtime="20220907 08:16:48.335"/>
 </kw>
-<status status="FAIL" starttime="20220907 02:18:53.193" endtime="20220907 02:19:03.457">Element with locator 'xpath=//*/div[2]/ul/li[1]' not found.</status>
+<status status="PASS" starttime="20220907 08:16:42.859" endtime="20220907 08:16:48.335"/>
 </test>
 <doc>Suite desctiption #smoke tests for Streamlet website</doc>
-<status status="FAIL" starttime="20220907 02:18:53.053" endtime="20220907 02:19:03.458"/>
+<status status="PASS" starttime="20220907 08:16:42.716" endtime="20220907 08:16:48.335"/>
 </suite>
-<status status="FAIL" starttime="20220907 02:18:53.036" endtime="20220907 02:19:03.458"/>
+<status status="PASS" starttime="20220907 08:16:42.699" endtime="20220907 08:16:48.336"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="0" fail="1" skip="0" id="s1" name="Streamlet robot tests">Streamlet robot tests</stat>
-<stat pass="0" fail="1" skip="0" id="s1-s1" name="Smoke Test">Streamlet robot tests.Smoke Test</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Streamlet robot tests">Streamlet robot tests</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Smoke Test">Streamlet robot tests.Smoke Test</stat>
 </suite>
 </statistics>
 <errors>

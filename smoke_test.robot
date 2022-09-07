@@ -16,10 +16,11 @@ ${VIDEOCARDXP}      xpath=//a[contains(text(), 'Get over here')]
 ${VIDEOPLAYER}      xpath=//*/section/div[2]/div/div[1]
 ${USERDDMENUXP}     xpath=//*/header/div[2]/button[2]
 ${PROFILESETTINGSXP}        xpath=//*/div[2]/ul/li[1]
+${PROFILESETTINGS}      xpath=//*[contains(text(), 'Change your personal information')]
 ${STARTSTREAMBTNXP}     xpath=//*/header/div[2]/a
-${STUDIOHEADER}
-${STARTSTREAMSTUDIOXP}
-${STRKEYXP}
+${STUDIOHEADER}     xpath=//*[contains(text(), 'Welcome to Studio!')]
+${STARTSTREAMSTUDIOXP}      xpath=//*[contains(text(), 'Start streaming')]
+${STRKEYXP}     xpath=//*[contains(text(), 'Streaming key')]
 
 *** Test Cases ***
 Main page to login page
@@ -89,7 +90,7 @@ Open Sign in page
     Open Browser        ${SIGNIN URL}   ${BROWSER}
     Wait Until Element Contains     ${AUHEADER}     Sign in
 Type in email
-    Input text      ${EMAILXP}      mytest2@mailsac.com
+    Input text      ${EMAILXP}      mytest3@mailsac.com
 Type in password
     Input text      ${PASSWORDXP}       12341234
 Click user profile settings
@@ -98,9 +99,10 @@ Click user profile settings
     Wait Until Element Is Visible       ${PROFILESETTINGSXP}
     Click Element       ${PROFILESETTINGSXP}
 Assert profile settings
-    Wait Until Element Contains     ${PROFILESETTINGSXP}    Profile settings
+    Wait Until Element Contains     ${PROFILESETTINGS}    Change your personal information
     Capture Page Screenshot     alert.png
 Click on the Start stream button
+    Wait Until Element is Visible       ${STARTSTREAMBTNXP}
     Click Element       ${STARTSTREAMBTNXP}
 Assert studio header message
     Wait Until Element Contains     ${STUDIOHEADER}     Welcome to Studio!
